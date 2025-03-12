@@ -23,7 +23,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => 'دسته محصولات',
+				'label' => 'Product Cat',
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -36,7 +36,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
         $this->add_control(
 			'Psh_Product_list',
 				[
-					'label' => 'انتخاب دسته بندی مادر',
+					'label' => 'Select the mother category',
 					'type' => \Elementor\Controls_Manager::SELECT,	
 					'default' => 'solid',
 					'options' => $options,	
@@ -59,7 +59,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
         $this->add_control(
 			'Psh_Product_Grid',
 				[
-					'label' => 'تعداد ستون',
+					'label' => 'Columns',
 					'type' => \Elementor\Controls_Manager::NUMBER,	
 					'default' => 1,
 					'min' => 1,
@@ -70,7 +70,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
         $this->add_control(
 			'Psh_Product_Grid_Cgap',
 				[
-					'label' => 'فاصله بین ستون',
+					'label' => 'Margin col',
 					'type' => \Elementor\Controls_Manager::NUMBER,	
 					'default' => 10,
 					'min' => 1,
@@ -80,7 +80,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
         $this->add_control(
 			'Psh_Product_Grid_Rgap',
 				[
-					'label' => 'فاصله بین سطر',
+					'label' => 'Margin row',
 					'type' => \Elementor\Controls_Manager::NUMBER,	
 					'default' => 5,
 					'min' => 1,
@@ -93,7 +93,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
 		$this->start_controls_section(
         	'style_section_swithcher',
         	[
-				'label' => 'تنظیمات عنوان ',
+				'label' => 'Title Setting',
         		'tab' => \Elementor\Controls_Manager::TAB_STYLE,
         	]
         );	 
@@ -102,7 +102,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'psh_main_text_color',
 			[
-				'label' => 'رنگ عنوان',
+				'label' => 'Title Color',
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-icon-list-text' => 'color: {{VALUE}}',
@@ -115,7 +115,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'psh_hover_mode_text_color',
 			[
-				'label' => 'رنگ هاور عنوان',
+				'label' => 'Title Color Hover',
 				'type' => \Elementor\Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .elementor-icon-list-text:hover' => 'color: {{VALUE}}',
@@ -129,7 +129,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
 			\Elementor\Group_Control_Typography::get_type(),
 			[
 				'name' => 'psh_main_text_type',
-				'label' => 'تایپوگرافی',
+				'label' => 'Typography',
 				'selector' => '{{WRAPPER}} .elementor-icon-list-text',
 			]
 		);
@@ -137,7 +137,7 @@ class Elementor_Psh_Product_Widget extends \Elementor\Widget_Base {
 		$this->add_control(
 			'hover_animation',
 			[
-				'label' => 'انیمیشن هاور',
+				'label' => 'Hover Motion',
 				'type' => \Elementor\Controls_Manager::HOVER_ANIMATION,
 			]
 		);
