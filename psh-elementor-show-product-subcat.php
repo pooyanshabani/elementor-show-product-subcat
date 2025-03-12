@@ -1,10 +1,10 @@
 <?php
 /*
- * Plugin Name: لیست زیردسته های محصولات
- * Plugin URI: https://www.zhaket.com/store/web/darsad
- * Description: پلاگین ایجاد زیر دسته محصولات در المنتور
+ * Plugin Name: Elementor show product subcat
+ * Plugin URI: https://github.com/pooyanshabani/elementor-show-product-subcat/
+ * Description: Plugin for creating product subcategories in Elementor
  * Author: درصد - پویان شعبانی
- * Author URI: https://www.zhaket.com/store/web/darsad
+ * Author URI: https://pooyan-shabani.ir
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
  * Version: 1.0.0
