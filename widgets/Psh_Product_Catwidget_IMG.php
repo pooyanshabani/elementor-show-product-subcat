@@ -7,7 +7,7 @@ class Elementor_Psh_Product_Widget_IMG extends \Elementor\Widget_Base {
     }
 
     public function get_title() {
-        return 'تصویر دسته بندی محصول';
+        return 'Product Cat imge';
     }
 
     public function get_icon() {
@@ -23,7 +23,7 @@ class Elementor_Psh_Product_Widget_IMG extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section_img',
 			[
-				'label' => 'دسته محصولات',
+				'label' => 'Product Cat',
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -36,7 +36,7 @@ class Elementor_Psh_Product_Widget_IMG extends \Elementor\Widget_Base {
         $this->add_control(
 			'Psh_Product_list_img',
 				[
-					'label' => 'انتخاب دسته بندی',
+					'label' => 'Select Category',
 					'type' => \Elementor\Controls_Manager::SELECT,
 					'options' => $options,	
 				]	
@@ -45,7 +45,7 @@ class Elementor_Psh_Product_Widget_IMG extends \Elementor\Widget_Base {
         $this->add_control(
 			'product_cat_img_align',
 				[
-					'label' => 'جهت',
+					'label' => 'Alignment',
 					'type' => \Elementor\Controls_Manager::SELECT,
 					'default' => 'left',
 					'options' => [
